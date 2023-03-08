@@ -15,3 +15,8 @@ const showAmount7 = document.getElementById('show-amount7')
 const total = document.getElementById('total')
 
 const maxValue = 100;
+const getData = () => {
+    fetch('data.json')
+        .then(res => res.json())
+        .then(data => displayData(data))
+}
